@@ -1,6 +1,7 @@
+---
 # 🖐 AirScroll 
 
-AirScroll is a real-time gesture-controlled scrolling and screenshot tool built using OpenCV and MediaPipe.
+AirScroll is a real-time gesture-controlled scrolling and screenshot tool built using **OpenCV** and **MediaPipe**.
 
 It allows users to control vertical scrolling and capture screenshots using simple hand gestures detected via webcam.
 
@@ -8,13 +9,13 @@ It allows users to control vertical scrolling and capture screenshots using simp
 
 ## 🚀 Features
 
-- 👍 Thumbs Up → Toggle scrolling ON/OFF
-- ✋ Open Palm → Capture screenshot
-- 🤏 Pinch Gesture → Set neutral scroll position
-- Smooth scrolling algorithm
-- Deadzone filtering to prevent jitter
-- Multi-monitor screenshot detection
-- Modular Python package structure
+- 👍 **Thumbs Up** → Toggle scrolling ON/OFF  
+- ✋ **Open Palm** → Capture screenshot  
+- 🤏 **Pinch Gesture** → Set neutral scroll position  
+- Smooth scrolling using exponential smoothing  
+- Deadzone filtering to prevent jitter  
+- Multi-monitor screenshot detection  
+- Modular Python package architecture  
 
 ---
 
@@ -32,17 +33,18 @@ It allows users to control vertical scrolling and capture screenshots using simp
 
 1. MediaPipe detects 21 hand landmarks in real time.
 2. Custom gesture logic compares landmark positions.
-3. Based on gesture:
+3. Based on detected gestures:
    - Scroll is toggled
    - Screenshot is captured
-   - Neutral position is calibrated.
+   - Neutral scroll position is calibrated
 4. Scroll speed is smoothed using exponential smoothing.
-5. Screenshots are saved with timestamp-based filenames.
+5. Screenshots are saved using timestamp-based filenames.
 
 ---
 
 ## 📁 Project Structure
 
+```bash
 airscroll/
 │
 ├── airscroll/
@@ -55,6 +57,7 @@ airscroll/
 ├── screenshots/
 ├── requirements.txt
 └── README.md
+````
 
 ---
 
@@ -62,21 +65,29 @@ airscroll/
 
 Clone the repository:
 
-git clone https://github.com/yourusername/airscroll.git  
-cd airscroll
+```bash
+git clone https://github.com/yourusername/AirScroll-Pro.git
+cd AirScroll-Pro
+```
 
-Create virtual environment (recommended):
+Create a virtual environment (recommended):
 
-python -m venv venv  
+```bash
+python -m venv venv
 venv\Scripts\activate
+```
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 Run the application:
 
+```bash
 python -m airscroll.main
+```
 
 ---
 
@@ -84,14 +95,17 @@ python -m airscroll.main
 
 All tunable parameters are located inside:
 
+```
 airscroll/config.py
+```
 
 You can adjust:
-- Detection confidence
-- Gesture cooldown timers
-- Scroll sensitivity
-- Smoothing factor
-- Pinch threshold
+
+* Detection confidence
+* Gesture cooldown timers
+* Scroll sensitivity
+* Smoothing factor
+* Pinch threshold
 
 ---
 
@@ -103,11 +117,11 @@ Screenshots are automatically saved inside the `screenshots/` folder.
 
 ## 🔮 Future Improvements
 
-- Horizontal scrolling support
-- Gesture calibration mode
-- GUI settings panel
-- Custom gesture classifier using ML
-- Window-specific screenshot capture
+* Horizontal scrolling support
+* Gesture calibration mode
+* GUI settings panel
+* Custom gesture classifier using ML
+* Window-specific screenshot capture
 
 ---
 
@@ -119,5 +133,9 @@ Built a real-time gesture-controlled scrolling and screenshot system using OpenC
 
 ## 👨‍💻 Author
 
-Ujjawal Shakya
-ujjawalshakya94@gmail.com
+**Ujjawal Shakya**
+📧 [ujjawalshakya94@gmail.com](mailto:ujjawalshakya94@gmail.com)
+📱 +91 8077005861
+
+```
+
